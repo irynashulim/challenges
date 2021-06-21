@@ -23,7 +23,7 @@ function timer(seconds) {
     displayTimeLeft(secondsLeft);
   }, 1000);
 }
-
+// time left function
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
@@ -39,7 +39,7 @@ function displayEndTime(timestamp) {
   const minutes = end.getMinutes();
   endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
-
+// start timer
 function startTimer() {
   const seconds = parseInt(this.dataset.time);
   timer(seconds);
